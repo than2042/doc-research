@@ -43,9 +43,18 @@ export default function page() {
 
   return (
     <div className="animate">
-      <AnimateIn>
-        <Image src={spin ? listOfImages[2] : dancer()} alt="dancer" priority />
-      </AnimateIn>
+      <div>
+        <AnimateIn>
+          <Image
+            src={spin ? listOfImages[2] : dancer()}
+            alt="dancer"
+            priority
+          />
+        </AnimateIn>
+      </div>
+      <div className="music">
+        <audio controls src="dance.mp3"></audio>
+      </div>
     </div>
   );
 }
