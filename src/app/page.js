@@ -1,11 +1,16 @@
+"use client";
+// import { motion } from "framer-motion";
+// import { Scene } from "./components/Scene";
+
 const Home = () => {
   return (
     <main>
-      <div>
-        <h2>
-          Templates <span>-&gt;</span>
-        </h2>
-      </div>
+
+      <h1>Home</h1>
+      {/* <motion.div layout style={isFullscreen ? fullscreen : {}}>
+        <Scene />
+      </motion.div> */}
+
     </main>
   );
 };
