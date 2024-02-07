@@ -1,4 +1,6 @@
+
 body {
+  height: 100vh;
   --black: #000000;
   --ash-black: #222;
   --white: #fafafa;
@@ -20,6 +22,25 @@ body {
   color: var(--accent);
   padding-bottom: 100px;
   overflow: hidden;
+}
+
+.animate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../../public/dance_floor_background.jpg");
+}
+
+
+.position {
+  position: absolute;
+  bottom: 27%;
+}
+.music {
+  position: absolute;
+  bottom: 0;
 }
 
 #root {
@@ -234,3 +255,4 @@ a {
   position: fixed;
   bottom: 0;
 }
+

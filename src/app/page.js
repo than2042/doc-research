@@ -5,12 +5,13 @@
 const Home = () => {
   return (
     <main>
+
       <h1>Home</h1>
       {/* <motion.div layout style={isFullscreen ? fullscreen : {}}>
         <Scene />
       </motion.div> */}
+
     </main>
   );
 };
-
 export default Home;
