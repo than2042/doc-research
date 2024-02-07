@@ -8,7 +8,7 @@ export default function AnimateIn({ children }) {
       animate={{
         x: [0, 130, 260, 390, 420, 550, 680, 810, 940, 1150],
         y: [0, 50, 0, 0, 0, 100, 0, -100, 0, 0],
-        rotateY: [0, 0, 0, 0, 360, 360, 360, 360, 360, 360],
+        rotateY: [0, 0, 0, 0, 360, 360, 360, 0, 0, 0],
       }}
       transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
     >

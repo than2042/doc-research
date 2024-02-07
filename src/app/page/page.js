@@ -3,24 +3,22 @@
 import Image from "next/image";
 import dancer1 from "@/../public/move1.png";
 import dancer2 from "@/../public/move2.png";
-import dancer3 from "@/../public/turn1.png";
-import dancer4 from "@/../public/turn2.png";
-import dancer5 from "@/../public/jump.png";
+import dancer3 from "@/../public/turn2.png";
 import AnimateIn from "../component/animation";
+
 import { useState, useEffect } from "react";
 
 let i = 1;
 
 export default function page() {
-  const listOfImages = [dancer1, dancer2, dancer3, dancer4, dancer5];
+  const listOfImages = [dancer1, dancer2, dancer3];
   const [boolean, setBoolean] = useState(false);
   const [spin, setSpin] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       i++;
-      console.log(i);
-      if (i === 10 || i === 11) {
+      if (i === 10 || i === 11 || i === -5 || i === -6) {
         setSpin(true);
       } else if (i === 12) {
         i = -13;
@@ -43,16 +41,10 @@ export default function page() {
     return listOfImages[1];
   }
 
-  function spinDancer() {
-    if (i === 10 || i === 11) {
-      return listOfImages[3];
-    }
-  }
-
   return (
     <div className="animate">
       <AnimateIn>
-        <Image src={spin ? spinDancer() : dancer()} alt="dancer" priority />
+        <Image src={spin ? listOfImages[2] : dancer()} alt="dancer" priority />
       </AnimateIn>
     </div>
   );
