@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main className={styles.main}>
+    <main>
       <div>
         <h2>
           Templates <span>-&gt;</span>
@@ -9,5 +9,4 @@ const Home = () => {
     </main>
   );
 };
-
 export default Home;
