@@ -1,16 +1,15 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import dancer1 from "@/../public/move1.png";
 import dancer2 from "@/../public/move2.png";
 import dancer3 from "@/../public/turn2.png";
-import AnimateIn from "../component/animation";
-
-import { useState, useEffect } from "react";
+import AnimateIn from "../components/animation";
 
 let i = 1;
 
-export default function page() {
+export default function Dance() {
   const listOfImages = [dancer1, dancer2, dancer3];
   const [boolean, setBoolean] = useState(false);
   const [spin, setSpin] = useState(false);
