@@ -11,6 +11,10 @@ body {
   height: 100vh;
 }
 
+.position {
+  position: absolute;
+  bottom: 27%;
+}
 .music {
   position: absolute;
   bottom: 0;

@@ -43,7 +43,7 @@ export default function page() {
 
   return (
     <div className="animate">
-      <div>
+      <div className="position">
         <AnimateIn>
           <Image
             src={spin ? listOfImages[2] : dancer()}
