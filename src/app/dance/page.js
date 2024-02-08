@@ -42,6 +42,14 @@ export default function Dance() {
 
   return (
     <div className="animate">
+      <Image
+        width={0}
+        height={0}
+        sizes="100vw"
+        src="/dance_floor_background.jpg"
+        alt=""
+        className="image"
+      />
       <div className="position">
         <AnimateIn>
           <Image
